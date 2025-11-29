@@ -26,11 +26,14 @@ work environment satisfaction, salary hike, overtime, and other HR-related featu
 
 ### 📂 Project Structure
 - `app.py` – Flask application
-- `model.pkl` – trained ML model
+- `model.py` – trained ML model
+- `model.pkl` –An intermediate or backup serialized ML model used during development or testing.
+- `trained_model.pkl` – The final, production-ready model loaded by app.py for real-time predictions.
 - `encoders.pkl` – saved label encoders
+- `columns.pkl` –A serialized list ensuring the correct feature order and set for new data before prediction.
 - `templates/` – HTML files
 - `static/` – CSS files
-- `notebooks/` – data preprocessing & model training
+
 
 ### 🎯 Purpose
 This project is designed to help HR teams take data-driven decisions, reduce employee turnover, 
